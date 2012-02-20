@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# by Jan Groenewald, jan@aims.ac.za
+# (c) Jan Groenewald, jan@aims.ac.za
 # script to sanitize data/.../file.ext into cleaned_data.d/._./file.txt
 
 ##############################################################################################
