@@ -24,7 +24,7 @@ echo
 CLEANDIR="cleaned_${CLEANTMP}.d"
 mkdir -p ${CLEANDIR}
 NUMFILES=`find ${CLEANTMP} -type f -a -name '*[0-9][0-9]*' -print | wc -l`
-echo "Moving ${NUMFILES} data files into ${CLEANDIR}"
+echo "Moving ${NUMFILES} data files into ${CLEANDIR}..."
 # rename: e.g. data/dir1/dir2/file.dat -> data_dir1_dir2_file.txt 
 find $CLEANTMP -type f -a -name '*[0-9][0-9]*' -exec bash -c \
 	"cp -f {} ${CLEANDIR}/\`echo {} | sed -e 's,/,_,g;s/.txt//'\`.txt" \;
